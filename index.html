@@ -1,46 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
-    <h1>LocateMe</h1>
-    <p>Search up the city of your choice!</p> 
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>GTCoding</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
-    <script src="script.js"></script>
+    <div class="container">
+      <h2>Locate Me</h2>
+      
 
-  <div class="dropdown">
-    <button class="dropbtn">Dropdown</button>
-    <div class="dropdown-content">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
+      <div class="select-box">
+        <div class="options-container">
+          <div class="option">
+            <input
+              type="city"
+              class="city"
+              id="London"
+              name="Cities"
+            />
+            <label for="London">London</label>
+          </div>
+
+          <div class="option">
+            <input type="city" class="city" id="Mumbai" name="Cities" />
+            <label for="Mumbai">Mumbai</label>
+          </div>
+
+          <div class="option">
+            <input type="city" class="city" id="Los Angeles" name="Cities" />
+            <label for="Los Angeles">Los Angeles</label>
+          </div>
+
+          <div class="option">
+            <input type="city" class="city" id="Tokyo" name="Cities" />
+            <label for="Tokyo">Tokyo</label>
+          </div>
+
+          <div class="option">
+            <input type="city" class="city" id="Chicago" name="Cities" />
+            <label for="Chicago">Chicago</label>
+          </div>
+        </div>
+
+      
+        <div class="selected">
+          Select a City
+        </div>
+
+        <div class="search-box">
+          <input type="text" placeholder="Search up the city of your choice!" />
+        </div>
+      </div>
+      
     </div>
-  </div>
-  
-  <!-- <table style="width:54%"> -->
-  <table>
-  <tr>
-    <th>Commonly Searched Up Cities</th>
-  </tr>
-  <tr>
-    <td>London</td>
-  </tr>
-  <tr>
-    <td>Mumbai</td>
-  </tr>
-  <tr>
-    <td>Los Angeles</td>
-  </tr>
-  <tr>
-    <td>Tokyo</td>
-  </tr>
-  <tr>
-    <td>Chicago</td>
-  </tr>
-</table>
-</body>
+
+    <table style="width:48%">
+      <tr>
+        <th class = "main-bar">Information</th>
+      </tr>
+      <tr>
+        <td class = "climate-info">Climate Info: </td>
+      </tr>
+      <tr>
+        <td class = "health-info">Health Info: </td>
+      </tr>
+      <tr>
+        <td class = "safety-info">Is it safe?: </td>
+      </tr>
+    </table>
+    
+    <!-- <div class = "more-info"> Want more info on your selected city? </div>
+    <button class = "more-info-button"> Click Here </button> -->
+
+    <script src="script.js"></script>
+  </body>
 </html>
